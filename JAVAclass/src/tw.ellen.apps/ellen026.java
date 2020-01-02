@@ -14,7 +14,7 @@ public class ellen026 {
 		System.out.println(id3.getId() + ":" + (TWId.checkId(id3.getId()) ? "OK":"XX") );
 		System.out.println(id4.getId() + ":" + (TWId.checkId(id4.getId()) ? "OK":"XX") );
 
-		TWId id5 = TWId.createTWId("P223234983");
+		TWId id5 = TWId.createTWId("B222560492");
 		if (id5 != null)
 			System.out.println(id5.getId());
 		else

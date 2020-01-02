@@ -20,6 +20,7 @@ public class ellen023 {
 		String a2 = new String(b1) ;
 		System.out.println(a1 == a2);
 		System.out.println(a1.equals(a2));
+		// == : 比對是否來自同一記憶體位置
 		// String 類別裡的equals 被改寫成比對內容
 		
 		System.out.println("================================");
@@ -28,6 +29,7 @@ public class ellen023 {
 		ellen e2 = new ellen() ;
 		System.out.println(e1 == e2);
 		System.out.println(e1.equals(e2));
+		// ellen 類別裡的equals 沒被改寫(且承自父類別Object),所以還是比對記憶體位置
 		
 		System.out.println("================================");
 		
