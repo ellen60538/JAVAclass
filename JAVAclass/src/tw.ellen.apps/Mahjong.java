@@ -24,32 +24,7 @@ public class Mahjong {
 		int[][] players = new int[4][16];
 		for (int i = 0; i < 64; i++) {
 			int newi = i % 16;
-			switch (newi) {
-			case 0:
-			case 1:
-			case 2:
-			case 3:
-				players[newi / 4][i % 4 + i / 16 * 4] = mahjong[i];
-				break;
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-				players[newi / 4][i % 4 + i / 16 * 4] = mahjong[i];
-				break;
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-				players[newi / 4][i % 4 + i / 16 * 4] = mahjong[i];
-				break;
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-				players[newi / 4][i % 4 + i / 16 * 4] = mahjong[i];
-				break;
-			}
+			players[newi / 4][i % 4 + i / 16 * 4] = mahjong[i];
 		}
 
 		// 花色
